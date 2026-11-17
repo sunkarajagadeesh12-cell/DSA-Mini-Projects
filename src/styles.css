@@ -1,0 +1,29 @@
+:root{--paper:#fbfcfe;--ink:#17213a;--rule:#d5deef;--margin:#d9485f;--hl:#ffe96b;--muted:#5d6985;--accent:#2b4acb}
+*{box-sizing:border-box}
+body{margin:0;background:#e9edf5;color:var(--ink);font:16px/1.6 system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+h1{font:700 1.7rem Charter,Georgia,serif;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+textarea,input,select{width:100%;font:inherit;padding:10px;border:1px solid #b9c4dd;border-radius:6px;background:#fff;color:inherit}
+textarea{min-height:110px;resize:vertical;margin-bottom:4px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button{font:inherit;padding:9px 16px;border-radius:6px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer}
+button.ghost{background:transparent;color:var(--ink)}
+button:disabled{opacity:.5;cursor:not-allowed}
+details{margin:8px 0 14px}summary{cursor:pointer;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:10px}
+label{font-size:.85rem;color:var(--muted)}
+.err{color:#a3162f;margin-top:12px}
+.page{margin-top:28px;border-left:3px solid var(--margin);padding:20px 22px 22px 28px;background-color:var(--paper);
+  background-image:repeating-linear-gradient(transparent 0 31px,var(--rule) 31px 32px);
+  font:1.05rem/32px Charter,Georgia,serif;box-shadow:0 1px 3px rgba(23,33,58,.15)}
+.page h2{font:700 1.4rem/32px Charter,Georgia,serif;margin:0}
+.page h3{font:700 1rem/32px system-ui,sans-serif;margin:16px 0 0}
+.page p,.page ul,.page ol{margin:0}
+.badge{font:.85rem/32px system-ui,sans-serif;color:var(--muted);display:block}
+pre{background:#fff;border:1px solid var(--rule);padding:10px;overflow:auto;font:.9rem/1.5 ui-monospace,monospace;margin:8px 0}
+.scroll{overflow-x:auto;background:#fff;margin:8px 0}
+table{border-collapse:collapse;width:100%;font:.95rem/1.4 system-ui,sans-serif}
+th,td{border:1px solid var(--rule);padding:6px 8px;text-align:left}
+.final{background:var(--hl);padding:4px 8px;margin-top:16px;display:block;line-height:1.6}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;font:1rem system-ui,sans-serif}
